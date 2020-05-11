@@ -67,5 +67,10 @@ Leetcode 题解 - 双指针
 遇到问题点1，判断异常的条件 s 和t 互为空时,其中一个为空时是否返回true 都是subsequence 2，字符串判断相等用equals方法 即使判断""
 s为空时，肯定是  s、t都为空时都是 s不为空t为空时不是
 9. 修改一个数成为非递减数组
+分隔字符串使同种字符出现在一起 S = "ababcbacadefegdehijhklij" 输出Output: [9,7,8] The partition is "ababcbaca", "defegde", "hijhklij"
+参考PartitionLabels
+思路：
+1，设置起始位置和结束位置 总条件是在字符串长度范围内，小范围是遍历起始位置和技术位置有没有大于这个范围的如果有替换继续查找，没有就加入 i++ 起始位置和结束位置都重新变更
+注意要判断是不是最后一个元素 防止异常
 
 
